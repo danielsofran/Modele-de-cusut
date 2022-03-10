@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81ED965E-AA92-4BE2-880A-7CCA2F6B8A16}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Modele_de_cusut</RootNamespace>
+    <AssemblyName>Modele de cusut</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\SOFRAN ROMULUS\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>19A1554DCB823E5B0DEBCDC211E91CB09435A927</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Modele de cusut_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Modele_de_cusut.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Control.Draggable, Version=1.0.5049.269, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Control.Draggable.1.0.5049.269\lib\net35-Client\Control.Draggable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CompareProiects.cs" />
+    <Compile Include="Classes\Foldere.cs" />
+    <Compile Include="Classes\History.cs" />
+    <Compile Include="Classes\ModelInfo.cs" />
+    <Compile Include="Classes\ModelX.cs" />
+    <Compile Include="Classes\PointHelper.cs" />
+    <Compile Include="Classes\Proiect.cs" />
+    <Compile Include="Classes\ScreenCapture.cs" />
+    <Compile Include="Classes\ShapeDraw.cs" />
+    <Compile Include="Classes\ToDoList.cs" />
+    <Compile Include="Costum Controls\ChangeColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\ChangeColors.Designer.cs">
+      <DependentUpon>ChangeColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\EditProiect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\EditProiect.Designer.cs">
+      <DependentUpon>EditProiect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\HelpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\HelpPage.Designer.cs">
+      <DependentUpon>HelpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\ModelDraft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\ModelDraft.Designer.cs">
+      <DependentUpon>ModelDraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\PrewiewImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\ProiectItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\ProiectItem.Designer.cs">
+      <DependentUpon>ProiectItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\CreateProiect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\CreateProiect.Designer.cs">
+      <DependentUpon>CreateProiect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Costum Controls\SelectionTool.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\SwapColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Costum Controls\SwapColor.Designer.cs">
+      <DependentUpon>SwapColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursoare\CursorHelper.cs" />
+    <Compile Include="Editor\Costum Controls\ColorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Editor\Costum Controls\ColorBox.Designer.cs">
+      <DependentUpon>ColorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\ModelEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\ModelEditor.Designer.cs">
+      <DependentUpon>ModelEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Costum Controls\ChangeColors.resx">
+      <DependentUpon>ChangeColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\EditProiect.resx">
+      <DependentUpon>EditProiect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\HelpPage.resx">
+      <DependentUpon>HelpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\ModelDraft.resx">
+      <DependentUpon>ModelDraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\PrewiewImage.resx">
+      <DependentUpon>PrewiewImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\ProiectItem.resx">
+      <DependentUpon>ProiectItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\CreateProiect.resx">
+      <DependentUpon>CreateProiect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Costum Controls\SwapColor.resx">
+      <DependentUpon>SwapColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\Costum Controls\ColorBox.resx">
+      <DependentUpon>ColorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\ModelEditor.resx">
+      <DependentUpon>ModelEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol-add-plus-green-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savetofile50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-folder-moves-cut-take-change-changes-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ereaser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawing-eraser-computer-icons-eraser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eraser-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor erase.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cursorerase.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursoare\cursor_erase.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cursoare\Cursor2.cur" />
+    <None Include="Resources\zip.png" />
+    <None Include="Resources\download-zip.svg" />
+    <None Include="Resources\circlefill.png" />
+    <None Include="Resources\358013-200.png" />
+    <None Include="Resources\square.png" />
+    <None Include="Resources\circle.png" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\eraser-icon-2.jpg" />
+    <None Include="Resources\keyboard.png" />
+    <None Include="Resources\mouse-pointer11.jpg" />
+    <None Include="Resources\mouse-pointer1.jpg" />
+    <None Include="Resources\Omirror.png" />
+    <None Include="Resources\Vmirror.png" />
+    <None Include="Resources\mirror2.png" />
+    <None Include="Resources\mirror1.png" />
+    <None Include="Resources\mirror.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\Artboard_28-512.png" />
+    <None Include="Resources\Reset-Settings-512.png" />
+    <None Include="Resources\contur.png" />
+    <None Include="Resources\color-picker1.jpg" />
+    <None Include="Resources\color-picker.png" />
+    <None Include="Resources\artist-palette.ico" />
+    <None Include="Resources\color-fill-512.png" />
+    <None Include="Resources\paste.jpg" />
+    <None Include="Resources\fill.png" />
+    <None Include="Resources\colorbrush.png" />
+    <None Include="Resources\Business_Color_Shadow_Marketing_Office-01-512.png" />
+    <None Include="Resources\copycolor1.png" />
+    <None Include="Resources\copycolor.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\ArrowDownRight1.png" />
+    <None Include="Resources\ArrowUpLeft.png" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\ArrowDownLeft.png" />
+    <None Include="Resources\ArrowDown.png" />
+    <None Include="Resources\ArrowDownRight.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="Resources\ArrowUpRight.png" />
+    <None Include="Resources\ArrowUp.png" />
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
